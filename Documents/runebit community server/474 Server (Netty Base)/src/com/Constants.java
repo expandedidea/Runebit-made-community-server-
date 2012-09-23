@@ -10,9 +10,8 @@ public class Constants {
 	public int XP_RATE = 50; //the xp rate is this number times normal runescape xp rates.
 	public static String LOGIN_MESSAGE() {
 		if(Random.random(4) == 1) {
-		return "The only real forum thread was made by tilt";
-		
-	}
+		return "The only real forum thread was made by tilt";	
+	        }
 		if(Random.random(6) == 2) {
 			return "There is no real owner.  The community owns this server.  Tilt just made it.";		
 		}
