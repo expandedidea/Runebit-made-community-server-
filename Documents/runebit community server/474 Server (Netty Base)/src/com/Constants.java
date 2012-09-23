@@ -1,32 +1,32 @@
 package com;
 
 import com.util.Random;
-
+/**
+ * Global server constants.
+ * @author Tilt
+ * @author Chandler
+ */
 public class Constants {
-
 	
-	
+	/**
+	 * Server name; remember to reference this for ever instance of the name coming up.
+	 */
 	public static String SERVER_NAME = "Runebit Community server";
-	public int XP_RATE = 50; //the xp rate is this number times normal runescape xp rates.
-	public static String LOGIN_MESSAGE() {
-		if(Random.random(4) == 1) {
-		return "The only real forum thread was made by tilt";	
-	        }
-		if(Random.random(6) == 2) {
-			return "There is no real owner.  The community owns this server.  Tilt just made it.";		
-		}
-		if(Random.random(6) == 3) {
-			return "We have clan battles all the time!  Who's side are you on?";		
-		}
-		if(Random.random(6) == 4) {
-			return "Runebit was created in january of 2012 by mod vault.";		
-		}
-		if(Random.random(6) == 5) {
-			return "The only moderators on this server are 'Tilt', 'vault', and 'Joshua F'.  Moderators are not allowed to spawn items.";		
-		}
-		if(Random.random(6) == 6) {
-			return "Always virus-scan any file you get on runebit.  You never know what a file has in-store for you...";		
-		}
-		return null;
-}
+	/**
+	 * XP rate; RuneScape xp * value.
+	 */
+	public int XP_RATE = 50;
+	/**
+	 * Login message. The way this was done before was gross.
+	 */
+	public static String LOGIN_MESSAGE = "Welcome to RuneBit.";
+	/**
+	 * Are we debugging?
+	 */
+	public static boolean DEBUG_ENABLED = false;
+	 /**
+	  * The listener port. 
+	  */
+	public static int LISTENER_PORT = 43594;
+
 }
